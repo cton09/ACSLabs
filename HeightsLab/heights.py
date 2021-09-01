@@ -1,28 +1,20 @@
-public class HeightMap
-{
-  /** A two-dimensional array of height values, initialized in the constructor (not shown)
-    * Guaranteed not to be null
-    */
-  private double[][] heights;
+class HeightMap:
 
+    # constructor - uses self to reference member variables
+    def __init__(self, r, c):
+        self.rows = r
+        self.cols = c
+        # Use a list of lists to represent the heights in the grid
 
-  /** @param r a valid row index in heights
-    * @param c a valid column index in heights
-    * @return true if the height at row r, column c is not at the edge of the 
-    * two-dimensional array heights, and is greater in value than all 8 surrounding
-    * values; false otherwise.
-    */
-  public boolean isPeak(int r, int c)
-  {  /* to be implemented in part (a) */  }
- 
+    def isPeak(self, r, c):
+        """
+        r -- a valid row index in heights
+        c --  a valid column index in heights
 
-  /** @return an ArrayList of String objects which give information on each peak in 
-    * the two-dimensional array heights.
-    * Each string is in the format "Peak at (r, c): Height h", where r and c
-    * are the row and column index, and h is the height of the peak.
-    */
-  public ArrayList peakInfo()
-  {  /* to be implemented in part (b) */  }
+        return -> true if the height at row r, column c is not at the edge of the two-dimensional array heights, and is greater in value than all 8 surrounding values; false otherwise.
+        """
+        return True
 
-  // There may be instance variables, constructors and methods that are not shown.
-}
+# Example
+hm = HeightMap(3, 3) # invoke constructor
+print(hm.isPeak(2, 2))
