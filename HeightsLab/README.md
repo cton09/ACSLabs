@@ -1,5 +1,5 @@
 ### Instructions
-A two-dimensional array of heights is represented in the height_map class in the file *heights.py*.
+A two-dimensional array of heights is represented in the HeightMap class in the file *heights.py*.
 
 1. Write the HeightMap method isPeak, which takes parameters r and c, which represent valid row and column indices respectively for the two-dimensional array heights. The method returns true if the following conditions for the element of heights at row r, column c are satisfied.
     * The element is not in the border of the array (in the first row or last row or first column or last column)
